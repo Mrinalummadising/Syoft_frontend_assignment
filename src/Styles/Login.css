@@ -1,0 +1,130 @@
+.login-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgb(108, 202, 182),
+    rgb(81, 135, 190)
+  );
+}
+
+.login-page-content {
+  padding: 20px;
+  background-color: #7edec6;
+  border: 3px solid #0ef;
+  width: 280px;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  animation: slidein 0.5s ease-in-out forwards;
+}
+
+.login-page-heading {
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.login-message {
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 18px;
+  line-height: 1.4;
+}
+
+.span-text {
+  color: #2323f9;
+  cursor: pointer;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.login-label-input-container {
+  margin-bottom: 15px;
+}
+
+.login-label-element {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  font-family: sans-serif;
+}
+
+.login-input-element {
+  background-color: rgb(179, 229, 233);
+  height: 30px;
+  width: 100%;
+  border-radius: 4px;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+}
+
+.checkbox-label-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.label-checkbox {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-button {
+  font-size: 16px;
+  background-color: #076474;
+  color: #fff;
+  height: 40px;
+  width: 150px;
+  padding: 10px;
+  margin-top: 24px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  transform: scale(1.05);
+  border-radius: 12px;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-content {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .login-page-content {
+    width: 400px;
+  }
+}
